@@ -1547,7 +1547,7 @@ b8R(a){switch(a){case 0:return"rtl"
 case 1:return null}return null},
 aAF(a,b){switch(a){case B.am:return"left"
 case B.tr:return"right"
-case B.a_:return"center"
+case B.Z:return"center"
 case B.k7:return"justify"
 case B.ts:switch(b.a){case 1:return"end"
 case 0:return"left"}break
@@ -5952,7 +5952,7 @@ while(s.t())}else{a+=A.i(s.gB(s))
 for(;s.t();)a=a+c+A.i(s.gB(s))}return a},
 axf(a,b,c,d){return new A.YC(a,b,c,d)},
 Np(a,b,c,d){var s,r,q,p,o,n="0123456789ABCDEF"
-if(c===B.Z){s=$.aBM().b
+if(c===B.a_){s=$.aBM().b
 s=s.test(b)}else s=!1
 if(s)return b
 r=c.kp(b)
@@ -6144,7 +6144,7 @@ atu(a){var s,r,q=0,p=null
 try{s=A.S6(a,q,p)
 return s}catch(r){if(t.Bj.b(A.aa(r)))return null
 else throw r}},
-aJm(a){return A.aKn(a,0,a.length,B.Z,!1)},
+aJm(a){return A.aKn(a,0,a.length,B.a_,!1)},
 aJl(a,b,c){var s,r,q,p,o,n,m="IPv4 address should contain exactly 4 parts",l="each part must be in the range 0..255",k=new A.akG(a),j=new Uint8Array(4)
 for(s=b,r=s,q=0;s<c;++s){p=B.i.bk(a,s)
 if(p!==46){if((p^48)>9)k.$2("invalid character",s)}else{if(q===3)k.$2(m,s)
@@ -6398,7 +6398,7 @@ if(r<=127)if(r!==37)q=!1
 else q=!0
 else q=!0
 if(q){s=!1
-break}++o}if(s){if(B.Z!==d)q=!1
+break}++o}if(s){if(B.a_!==d)q=!1
 else q=!0
 if(q)return B.i.Y(a,b,c)
 else p=new A.n8(B.i.Y(a,b,c))}else{p=A.d([],t.t)
@@ -13921,7 +13921,7 @@ akv:function akv(a,b){this.b=a
 this.a=b},
 adU:function adU(a){this.a=a},
 ak3:function ak3(a){this.a=a},
-aFC(a){return B.Z.cL(0,A.cf(a.buffer,0,null))},
+aFC(a){return B.a_.cL(0,A.cf(a.buffer,0,null))},
 Vb:function Vb(){},
 a8E:function a8E(){},
 a8F:function a8F(a,b){this.a=a
@@ -18277,7 +18277,7 @@ W8:function W8(a){this.a=a},
 aIn(a,b){var s=new Uint8Array(0),r=$.aAN().b
 if(!r.test(a))A.a6(A.f7(a,"method","Not a valid method"))
 r=t.N
-return new A.agO(B.Z,s,a,b,A.Y6(new A.a8g(),new A.a8h(),null,r,r))},
+return new A.agO(B.a_,s,a,b,A.Y6(new A.a8g(),new A.a8h(),null,r,r))},
 agO:function agO(a,b,c,d,e){var _=this
 _.y=a
 _.z=b
@@ -19283,10 +19283,10 @@ A.a83.prototype={
 gOE(){var s=new A.fM(new A.MT(window.document.querySelectorAll("meta"),t.jG),t.z8).kD(0,new A.a84(),new A.a85())
 return s==null?null:s.content},
 qu(a){var s
-if(A.S6(a,0,null).gFc())return A.Np(B.fg,a,B.Z,!1)
+if(A.S6(a,0,null).gFc())return A.Np(B.fg,a,B.a_,!1)
 s=this.gOE()
 if(s==null)s=""
-return A.Np(B.fg,s+("assets/"+a),B.Z,!1)},
+return A.Np(B.fg,s+("assets/"+a),B.a_,!1)},
 cu(a,b){return this.ZA(0,b)},
 ZA(a,b){var s=0,r=A.a2(t.yp),q,p=2,o,n=[],m=this,l,k,j,i,h,g,f,e
 var $async$cu=A.a3(function(c,d){if(c===1){o=d
@@ -19309,7 +19309,7 @@ h=A.aa(e)
 if(t.gK.b(h)){j=h
 i=A.aqh(j.target)
 if(t.Ff.b(i)){if(i.status===404&&b==="AssetManifest.json"){$.bB().$1("Asset manifest does not exist at `"+A.i(f)+"` \u2013 ignoring.")
-q=A.en(new Uint8Array(A.jb(B.Z.gmw().cw("{}"))).buffer,0,null)
+q=A.en(new Uint8Array(A.jb(B.a_.gmw().cw("{}"))).buffer,0,null)
 s=1
 break}h=i.status
 h.toString
@@ -20569,7 +20569,7 @@ s=6
 break
 case 3:s=2
 break
-case 6:i=t.jS.a(B.aR.cL(0,B.Z.cL(0,A.cf(a1.buffer,0,null))))
+case 6:i=t.jS.a(B.aR.cL(0,B.a_.cL(0,A.cf(a1.buffer,0,null))))
 if(i==null)throw A.f(A.kL(u.u))
 for(j=t.a,h=J.NE(i,j),h=new A.dN(h,h.gl(h)),g=m.a,f=A.v(h).c,e=t.j,d=!1;h.t();){c=f.a(h.d)
 b=J.ax(c)
@@ -25428,7 +25428,7 @@ r=A.cf(b.buffer,b.byteOffset,b.byteLength)
 if(r[0]===7){q=r[1]
 if(q>=254)A.a6(A.bR("Unrecognized message sent to dev.flutter/channel-buffers (method name too long)"))
 p=2+q
-o=B.Z.cL(0,B.W.bw(r,2,p))
+o=B.a_.cL(0,B.W.bw(r,2,p))
 switch(o){case"resize":if(r[p]!==12)A.a6(A.bR(j))
 n=p+1
 if(r[n]<2)A.a6(A.bR(j));++n
@@ -25436,7 +25436,7 @@ if(r[n]!==7)A.a6(A.bR("Invalid arguments for 'resize' method sent to dev.flutter
 m=r[n]
 if(m>=254)A.a6(A.bR("Invalid arguments for 'resize' method sent to dev.flutter/channel-buffers (channel name must be less than 254 characters long)"));++n
 p=n+m
-l=B.Z.cL(0,B.W.bw(r,n,p))
+l=B.a_.cL(0,B.W.bw(r,n,p))
 if(r[p]!==3)A.a6(A.bR("Invalid arguments for 'resize' method sent to dev.flutter/channel-buffers (second argument must be an integer in the range 0 to 2147483647)"))
 s.GH(0,l,b.getUint32(p+1,B.a4===$.cJ()))
 break
@@ -25447,11 +25447,11 @@ if(r[n]!==7)A.a6(A.bR("Invalid arguments for 'overflow' method sent to dev.flutt
 m=r[n]
 if(m>=254)A.a6(A.bR("Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (channel name must be less than 254 characters long)"));++n
 s=n+m
-B.Z.cL(0,B.W.bw(r,n,s))
+B.a_.cL(0,B.W.bw(r,n,s))
 s=r[s]
 if(s!==1&&s!==2)A.a6(A.bR("Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (second argument must be a boolean)"))
 break
-default:A.a6(A.bR("Unrecognized method '"+o+"' sent to dev.flutter/channel-buffers"))}}else{k=A.d(B.Z.cL(0,r).split("\r"),t.s)
+default:A.a6(A.bR("Unrecognized method '"+o+"' sent to dev.flutter/channel-buffers"))}}else{k=A.d(B.a_.cL(0,r).split("\r"),t.s)
 if(k.length===3&&J.j(k[0],"resize"))s.GH(0,k[1],A.f2(k[2],null))
 else A.a6(A.bR("Unrecognized message "+A.i(k)+" sent to dev.flutter/channel-buffers."))}}finally{c.$1(null)}else $.a7z().a_7(a,b,c)},
 UA(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=this
@@ -25463,7 +25463,7 @@ r=A.dT().a
 r.x=q
 r.CH()}h.dP(c,B.a0.by([A.d([!0],t.sj)]))
 break}return
-case"flutter/assets":p=B.Z.cL(0,A.cf(b.buffer,0,null))
+case"flutter/assets":p=B.a_.cL(0,A.cf(b.buffer,0,null))
 $.a6V.cu(0,p).dQ(0,new A.aaz(h,c),new A.aaA(h,c),t.P)
 return
 case"flutter/platform":s=B.av.eW(b)
@@ -27466,7 +27466,7 @@ s=6
 break
 case 3:s=2
 break
-case 6:i=t.jS.a(B.aR.cL(0,B.Z.cL(0,A.cf(a5.buffer,0,null))))
+case 6:i=t.jS.a(B.aR.cL(0,B.a_.cL(0,A.cf(a5.buffer,0,null))))
 if(i==null)throw A.f(A.kL(u.u))
 if($.auN())m.a=A.aGS()
 else m.a=new A.a44(A.d([],t.iJ))
@@ -33019,9 +33019,9 @@ A.apR.prototype={
 $2(a,b){var s=this.b,r=this.a
 s.a+=r.a
 r.a="&"
-r=s.a+=A.Np(B.dL,a,B.Z,!0)
+r=s.a+=A.Np(B.dL,a,B.a_,!0)
 if(b!=null&&b.length!==0){s.a=r+"="
-s.a+=A.Np(B.dL,b,B.Z,!0)}},
+s.a+=A.Np(B.dL,b,B.a_,!0)}},
 $S:252}
 A.apQ.prototype={
 $2(a,b){var s,r
@@ -35412,7 +35412,7 @@ else{q=B.j.av(127.5)
 r=r.a
 r=A.aB(q,r>>>16&255,r>>>8&255,r&255)}q=t.w
 p=t.p
-if(m.c.L(q).f.a.a<=1500)q=A.aJ(A.d([A.bc(A.OV(A.a7("Arun",l,l,A.ay(k,B.r,l),l,l,20)),l,l),A.bc(A.OV(A.a7(j,l,l,A.ay(i,B.r,l),l,l,7)),l,l),A.bc(A.iI(A.a7(h,7,B.bp,A.ay(g,B.r,l),B.a_,l,2),l,1000),l,l),A.bc(A.ij(B.f0,B.r,l),l,l)],p),B.D,B.F)
+if(m.c.L(q).f.a.a<=1500)q=A.aJ(A.d([A.bc(A.OV(A.a7("Arun",l,l,A.ay(k,B.r,l),l,l,20)),l,l),A.bc(A.OV(A.a7(j,l,l,A.ay(i,B.r,l),l,l,7)),l,l),A.bc(A.iI(A.a7(h,7,B.bp,A.ay(g,B.r,l),B.Z,l,2),l,1000),l,l),A.bc(A.ij(B.f0,B.r,l),l,l)],p),B.D,B.F)
 else{o=m.c.L(q).f
 n=m.c.L(q).f
 n=A.Ls(o.a.b*0.1,A.e(m.z,"image1"),l,l,l,n.a.a*0.1,l,l)
@@ -35432,12 +35432,12 @@ q=A.fZ(30)
 p=$.aP()
 p.toString
 o=t.p
-return A.b3(m,new A.aC(B.N,A.aJ(A.d([A.cA(r,new A.ao3(),A.cb(m,m,new A.aq(p,t.V),m,m,m,m,m,m,m,m,m,m,new A.aq(new A.bT(q,new A.bC(p,1,B.a3)),t.eH),m,m,m,m,m)),A.dB(A.d([A.bk(A.bc(A.a7("Programming languages",2,m,A.ay(l,p,m),B.a_,m,2),m,m),1),A.bk(A.bc(A.a7("Frameworks",m,m,A.ay(l,$.aP(),m),m,m,2),m,m),1),A.bk(A.bc(A.a7("Databases",m,m,A.ay(l,$.aP(),m),m,m,2),m,m),1)],o),B.D,B.F,B.a7),A.dB(A.d([A.bk(new A.aC(B.N,A.Sc(B.cp,A.d([n.bH(s,"assets/logos/dart.png","Dart"),n.bH(s,"assets/logos/python.png","Python"),n.bH(s,"assets/logos/java.png","Java"),n.bH(s,"assets/logos/c.png","C"),n.bH(s,"assets/logos/c++.png","C++"),n.bH(s,"assets/logos/js.png","JavaScript"),n.bH(s,"assets/logos/perl.png","Perl")],o),4,4),m),1),A.bk(new A.aC(B.N,A.Sc(B.cp,A.d([n.bH(s,"assets/logos/flutter.png","Flutter"),n.bH(s,"assets/logos/react.png","React"),n.bH(s,"assets/logos/node.png","NodeJS"),n.bH(s,"assets/logos/ejs.png","ExpressJS")],o),2,2),m),1),A.bk(new A.aC(B.N,A.Sc(B.cp,A.d([n.bH(s,"assets/logos/firebase.png","Firebase"),n.bH(s,"assets/logos/sql.png","SQL"),n.bH(s,"assets/logos/mongoDB.png","MongoDB")],o),2,2),m),1)],o),B.D,B.F,B.a7)],o),B.D,B.e1),m),B.r,m,m,m,m,m,m)},
+return A.b3(m,new A.aC(B.N,A.aJ(A.d([A.cA(r,new A.ao3(),A.cb(m,m,new A.aq(p,t.V),m,m,m,m,m,m,m,m,m,m,new A.aq(new A.bT(q,new A.bC(p,1,B.a3)),t.eH),m,m,m,m,m)),A.dB(A.d([A.bk(A.bc(A.a7("Programming languages",2,m,A.ay(l,p,m),B.Z,m,2),m,m),1),A.bk(A.bc(A.a7("Frameworks",m,m,A.ay(l,$.aP(),m),m,m,2),m,m),1),A.bk(A.bc(A.a7("Databases",m,m,A.ay(l,$.aP(),m),m,m,2),m,m),1)],o),B.D,B.F,B.a7),A.dB(A.d([A.bk(new A.aC(B.N,A.Sc(B.cp,A.d([n.bH(s,"assets/logos/dart.png","Dart"),n.bH(s,"assets/logos/python.png","Python"),n.bH(s,"assets/logos/java.png","Java"),n.bH(s,"assets/logos/c.png","C"),n.bH(s,"assets/logos/c++.png","C++"),n.bH(s,"assets/logos/js.png","JavaScript"),n.bH(s,"assets/logos/perl.png","Perl")],o),4,4),m),1),A.bk(new A.aC(B.N,A.Sc(B.cp,A.d([n.bH(s,"assets/logos/flutter.png","Flutter"),n.bH(s,"assets/logos/react.png","React"),n.bH(s,"assets/logos/node.png","NodeJS"),n.bH(s,"assets/logos/ejs.png","ExpressJS")],o),2,2),m),1),A.bk(new A.aC(B.N,A.Sc(B.cp,A.d([n.bH(s,"assets/logos/firebase.png","Firebase/Firestore"),n.bH(s,"assets/logos/sql.png","SQL"),n.bH(s,"assets/logos/mongoDB.png","MongoDB")],o),2,2),m),1)],o),B.D,B.F,B.a7)],o),B.D,B.e1),m),B.r,m,m,m,m,m,m)},
 rv(a,b){var s,r=null,q="Projects",p="Staatliches",o="assets/projects/2.png",n="Open Sans",m="PlayStore",l="assets/projects/1.png",k="assets/projects/3.png",j=t.p,i=t.eH,h=t.V
 if(b.L(t.w).f.a.a>950){s=t.wy
-return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(q,2,r,A.ay(p,$.aP(),r),B.am,r,5),new A.anW(),A.cb(r,r,new A.aq(B.E,h),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),i),r,r,r,r,r)),A.dB(A.d([A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,r,A.ay(p,$.aP(),r),B.a_,r,2),r,r),A.dB(A.d([A.bk(A.dL(o,r,r,r),1),new A.ei(1,B.b2,A.aJ(A.d([A.a7(u.i,r,r,A.ay(n,B.r,r),r,r,r),new A.aC(B.ar,A.cA(A.a7(m,r,r,A.bt(r,r,B.r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.anX(),A.cb(r,r,new A.aq($.aP(),s),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],j),B.ax,B.F),r)],j),B.D,B.b7,B.a7)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,r,A.ay(p,$.aP(),r),B.a_,r,2),r,r),A.dB(A.d([A.bk(A.dL(l,r,r,r),1),new A.ei(1,B.b2,A.aJ(A.d([A.a7(u.R,r,r,A.ay(n,B.r,r),r,r,r),new A.aC(B.ar,A.cA(A.a7(m,r,r,A.bt(r,r,B.r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.anY(),A.cb(r,r,new A.aq($.aP(),s),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],j),B.ax,B.F),r)],j),B.D,B.b7,B.a7)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,r,A.ay(p,$.aP(),r),B.a_,r,2),r,r),A.dB(A.d([A.bk(A.dL(k,r,r,r),1),new A.ei(1,B.b2,A.aJ(A.d([A.a7(u.E,r,r,A.ay(n,B.r,r),r,r,r),new A.aC(B.ar,A.cA(A.a7("Github",r,r,A.bt(r,r,B.r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.anZ(),A.cb(r,r,new A.aq($.aP(),s),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],j),B.ax,B.F),r)],j),B.D,B.b7,B.a7)],j),B.D,B.F),1)],j),B.D,B.F,B.a7)],j),B.D,B.F),r),B.E,r,r,r,r,r,r)}else return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(q,2,r,A.ay(p,$.aP(),r),B.am,r,5),new A.ao_(),A.cb(r,r,new A.aq(B.r,h),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),i),r,r,r,r,r)),A.dB(A.d([A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,r,A.ay(p,$.aP(),r),B.a_,r,2),r,r),A.fs(A.hc(r,A.dL(o,r,r,r),B.ak,!1,r,r,r,r,r,r,r,r,r,r,new A.ao0(),r,r,r,r,r),B.ba,r,r,r)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,r,A.ay(p,$.aP(),r),B.a_,r,2),r,r),A.fs(A.hc(r,A.dL(l,r,r,r),B.ak,!1,r,r,r,r,r,r,r,r,r,r,new A.ao1(),r,r,r,r,r),B.ba,r,r,r)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,r,A.ay(p,$.aP(),r),B.a_,r,2),r,r),A.fs(A.hc(r,A.dL(k,r,r,r),B.ak,!1,r,r,r,r,r,r,r,r,r,r,new A.ao2(),r,r,r,r,r),B.ba,r,r,r)],j),B.D,B.F),1)],j),B.D,B.F,B.a7)],j),B.D,B.F),r),B.E,r,r,r,r,r,r)},
+return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(q,2,r,A.ay(p,$.aP(),r),B.am,r,5),new A.anW(),A.cb(r,r,new A.aq(B.E,h),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),i),r,r,r,r,r)),A.dB(A.d([A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,r,A.ay(p,$.aP(),r),B.Z,r,2),r,r),A.dB(A.d([A.bk(A.dL(o,r,r,r),1),new A.ei(1,B.b2,A.aJ(A.d([A.a7(u.i,r,r,A.ay(n,B.r,r),r,r,r),new A.aC(B.ar,A.cA(A.a7(m,r,r,A.bt(r,r,B.r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.anX(),A.cb(r,r,new A.aq($.aP(),s),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],j),B.ax,B.F),r)],j),B.D,B.b7,B.a7)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,r,A.ay(p,$.aP(),r),B.Z,r,2),r,r),A.dB(A.d([A.bk(A.dL(l,r,r,r),1),new A.ei(1,B.b2,A.aJ(A.d([A.a7(u.R,r,r,A.ay(n,B.r,r),r,r,r),new A.aC(B.ar,A.cA(A.a7(m,r,r,A.bt(r,r,B.r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.anY(),A.cb(r,r,new A.aq($.aP(),s),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],j),B.ax,B.F),r)],j),B.D,B.b7,B.a7)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,r,A.ay(p,$.aP(),r),B.Z,r,2),r,r),A.dB(A.d([A.bk(A.dL(k,r,r,r),1),new A.ei(1,B.b2,A.aJ(A.d([A.a7(u.E,r,r,A.ay(n,B.r,r),r,r,r),new A.aC(B.ar,A.cA(A.a7("Github",r,r,A.bt(r,r,B.r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.anZ(),A.cb(r,r,new A.aq($.aP(),s),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],j),B.ax,B.F),r)],j),B.D,B.b7,B.a7)],j),B.D,B.F),1)],j),B.D,B.F,B.a7)],j),B.D,B.F),r),B.E,r,r,r,r,r,r)}else return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(q,2,r,A.ay(p,$.aP(),r),B.am,r,5),new A.ao_(),A.cb(r,r,new A.aq(B.r,h),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),i),r,r,r,r,r)),A.dB(A.d([A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,r,A.ay(p,$.aP(),r),B.Z,r,2),r,r),A.fs(A.hc(r,A.dL(o,r,r,r),B.ak,!1,r,r,r,r,r,r,r,r,r,r,new A.ao0(),r,r,r,r,r),B.ba,r,r,r)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,r,A.ay(p,$.aP(),r),B.Z,r,2),r,r),A.fs(A.hc(r,A.dL(l,r,r,r),B.ak,!1,r,r,r,r,r,r,r,r,r,r,new A.ao1(),r,r,r,r,r),B.ba,r,r,r)],j),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,r,A.ay(p,$.aP(),r),B.Z,r,2),r,r),A.fs(A.hc(r,A.dL(k,r,r,r),B.ak,!1,r,r,r,r,r,r,r,r,r,r,new A.ao2(),r,r,r,r,r),B.ba,r,r,r)],j),B.D,B.F),1)],j),B.D,B.F,B.a7)],j),B.D,B.F),r),B.E,r,r,r,r,r,r)},
 rA(a,b){var s="Staatliches",r=null,q=$.aP(),p=t.wy,o=t.p
-return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7("Work Samples",2,r,A.ay(s,q,r),B.am,r,5),new A.ao4(),A.cb(r,r,new A.aq(B.r,t.V),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),t.eH),r,r,r,r,r)),A.aJ(A.d([A.aJ(A.d([A.bc(A.a7("Github Profile",2,r,A.ay(s,B.r,r),B.a_,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Github",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.ao5(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F),A.aJ(A.d([A.bc(A.a7("Developer account link",2,r,A.ay(s,B.r,r),B.a_,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Developer account",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.ao6(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F)],o),B.D,B.F)],o),B.D,B.F),r),q,r,r,r,r,r,r)},
+return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7("Work Samples",2,r,A.ay(s,q,r),B.am,r,5),new A.ao4(),A.cb(r,r,new A.aq(B.r,t.V),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),t.eH),r,r,r,r,r)),A.aJ(A.d([A.aJ(A.d([A.bc(A.a7("Github Profile",2,r,A.ay(s,B.r,r),B.Z,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Github",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.ao5(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F),A.aJ(A.d([A.bc(A.a7("Developer account link",2,r,A.ay(s,B.r,r),B.Z,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Developer account",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.ao6(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F)],o),B.D,B.F)],o),B.D,B.F),r),q,r,r,r,r,r,r)},
 ru(a,b){var s,r,q,p=null,o=A.a7("Get in touch",2,p,A.ay("Staatliches",B.r,p),B.am,p,5),n=A.fZ(30),m=$.aP()
 m.toString
 n=A.cA(o,new A.anU(),A.cb(p,p,new A.aq(m,t.V),p,p,p,p,p,p,p,p,p,p,new A.aq(new A.bT(n,new A.bC(m,1,B.a3)),t.eH),p,p,p,p,p))
@@ -35452,7 +35452,7 @@ q=$.aP()
 o=b.L(o).f.a.a/20
 return A.b3(p,new A.aC(B.N,A.aJ(A.d([n,A.dB(A.d([new A.aC(B.N,m,p),new A.aC(B.N,s,p),new A.aC(B.N,A.fs(A.hc(p,A.Oc(new A.aC(B.N,A.b3(p,A.aJ(A.d([new A.aC(new A.bi(o,0,o,0),A.ij(B.lb,B.r,50),p),A.a7("Email",p,p,A.bt(p,p,B.r,p,p,p,p,p,p,p,p,p,p,B.ab,p,p,!0,p,p,p,p,p,p,p,p),p,p,2),A.a7("arun042000@gmail.com",p,p,A.bt(p,p,B.r,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p,p,1)],r),B.D,B.F),p,p,p,p,p,p,p),p),q),B.ak,!1,p,p,p,p,p,p,p,p,p,p,new A.anV(),p,p,p,p,p),B.ba,p,p,p),p)],r),B.D,B.qs,B.a7)],r),B.D,B.e1),p),B.E,p,p,p,p,p,p)},
 bH(a,b,c){var s=null
-return A.awE(A.cd(0,300),A.dL(b,B.dc,a,a),A.b3(s,A.bc(A.a7(c,s,s,A.ay("Work Sans",$.aP(),s),s,s,s),s,s),s,s,a,s,s,s,a))},
+return A.awE(A.cd(0,300),A.dL(b,B.dc,a,a),A.b3(s,A.bc(A.a7(c,s,s,A.ay("Work Sans",$.aP(),s),B.Z,s,s),s,s),s,s,a,s,s,s,a))},
 lt(a,b,c){var s=null
 return new A.aC(B.eW,A.axg(A.a7(a,s,s,A.ay("Work Sans",s,s),s,s,s),new A.anT(this,b),A.at3(s,s,s,s,s,s,s,s,s,s,s,B.r,s,B.rT,new A.bC(B.r,2,B.a3),s,s,s,s)),s)}}
 A.ao3.prototype={
@@ -35535,7 +35535,7 @@ switch(a){case 0:s=$.aP()
 if(s==null)s=p
 else{r=B.j.av(127.5)
 s=s.a
-s=A.aB(r,s>>>16&255,s>>>8&255,s&255)}return A.b3(p,new A.aC(B.N,A.aJ(A.d([A.bc(A.OV(A.a7("Arun",p,p,A.ay("Francois One",B.r,p),p,p,20)),p,p),A.bc(A.OV(A.a7("Aspiring Developer",p,p,A.ay("Work Sans",B.r,p),p,p,6)),p,p),A.bc(A.iI(A.a7(u.T,10,B.bp,A.ay("Big Shoulders Text",B.r,p),B.a_,p,1.5),p,p),p,p),new A.aC(B.yi,A.bc(A.ij(B.f0,B.r,p),p,p),p)],t.p),B.D,B.F),p),s,p,p,p,p,p,p)
+s=A.aB(r,s>>>16&255,s>>>8&255,s&255)}return A.b3(p,new A.aC(B.N,A.aJ(A.d([A.bc(A.OV(A.a7("Arun",p,p,A.ay("Francois One",B.r,p),p,p,20)),p,p),A.bc(A.OV(A.a7("Aspiring Developer",p,p,A.ay("Work Sans",B.r,p),p,p,6)),p,p),A.bc(A.iI(A.a7(u.T,10,B.bp,A.ay("Big Shoulders Text",B.r,p),B.Z,p,1.5),p,p),p,p),new A.aC(B.yi,A.bc(A.ij(B.f0,B.r,p),p,p),p)],t.p),B.D,B.F),p),s,p,p,p,p,p,p)
 case 1:return q.rz(b,c)
 case 2:return q.rv(b,c)
 case 3:return q.rA(b,c)
@@ -35550,16 +35550,16 @@ r=A.fZ(30)
 q=$.aP()
 q.toString
 p=t.p
-return A.b3(n,A.dB(A.d([new A.aC(B.N,A.aJ(A.d([A.cA(l,new A.aoi(),A.cb(n,n,new A.aq(q,t.V),n,n,n,n,n,n,n,n,n,n,new A.aq(new A.bT(r,new A.bC(q,1,B.a3)),t.eH),n,n,n,n,n)),A.bk(A.bc(A.a7("Programming languages",n,n,A.ay(m,q,n),n,n,2),n,n),1),A.bk(A.Sc(B.cp,A.d([o.bH(s,"assets/logos/dart.png","Dart"),o.bH(s,"assets/logos/python.png","Python"),o.bH(s,"assets/logos/java.png","Java"),o.bH(s,"assets/logos/c.png","C"),o.bH(s,"assets/logos/c++.png","C++"),o.bH(s,"assets/logos/js.png","JavaScript"),o.bH(s,"assets/logos/perl.png","Perl")],p),4,4),1),A.bk(A.bc(A.a7("Frameworks",n,n,A.ay(m,$.aP(),n),n,n,2),n,n),1),A.bk(A.Sc(B.cp,A.d([o.bH(s,"assets/logos/flutter.png","Flutter"),o.bH(s,"assets/logos/react.png","React"),o.bH(s,"assets/logos/node.png","NodeJS"),o.bH(s,"assets/logos/ejs.png","ExpressJS")],p),2,2),1),A.bk(A.bc(A.a7("Databases",n,n,A.ay(m,$.aP(),n),n,n,2),n,n),1),A.bk(A.Sc(B.cp,A.d([o.bH(s,"assets/logos/firebase.png","Firebase"),o.bH(s,"assets/logos/sql.png","SQL"),o.bH(s,"assets/logos/mongoDB.png","MongoDB")],p),2,2),1)],p),B.D,B.F),n)],p),B.D,B.e1,B.a7),B.r,n,a,n,n,n,n)},
+return A.b3(n,A.dB(A.d([new A.aC(B.N,A.aJ(A.d([A.cA(l,new A.aoi(),A.cb(n,n,new A.aq(q,t.V),n,n,n,n,n,n,n,n,n,n,new A.aq(new A.bT(r,new A.bC(q,1,B.a3)),t.eH),n,n,n,n,n)),A.bk(A.bc(A.a7("Programming languages",n,n,A.ay(m,q,n),n,n,2),n,n),1),A.bk(A.Sc(B.cp,A.d([o.bH(s,"assets/logos/dart.png","Dart"),o.bH(s,"assets/logos/python.png","Python"),o.bH(s,"assets/logos/java.png","Java"),o.bH(s,"assets/logos/c.png","C"),o.bH(s,"assets/logos/c++.png","C++"),o.bH(s,"assets/logos/js.png","JavaScript"),o.bH(s,"assets/logos/perl.png","Perl")],p),4,4),1),A.bk(A.bc(A.a7("Frameworks",n,n,A.ay(m,$.aP(),n),n,n,2),n,n),1),A.bk(A.Sc(B.cp,A.d([o.bH(s,"assets/logos/flutter.png","Flutter"),o.bH(s,"assets/logos/react.png","React"),o.bH(s,"assets/logos/node.png","NodeJS"),o.bH(s,"assets/logos/ejs.png","ExpressJS")],p),2,2),1),A.bk(A.bc(A.a7("Databases",n,n,A.ay(m,$.aP(),n),n,n,2),n,n),1),A.bk(A.Sc(B.cp,A.d([o.bH(s,"assets/logos/firebase.png","Firebase/Firestore"),o.bH(s,"assets/logos/sql.png","SQL"),o.bH(s,"assets/logos/mongoDB.png","MongoDB")],p),2,2),1)],p),B.D,B.F),n)],p),B.D,B.e1,B.a7),B.r,n,a,n,n,n,n)},
 rv(a,b){var s,r,q,p,o=null,n="Projects",m="Staatliches",l="assets/projects/2.png",k=u.i,j="Open Sans",i="PlayStore",h="assets/projects/1.png",g=u.R,f="assets/projects/3.png",e=u.E,d=t.w
 d=b.L(d).f.a.b<1050&&b.L(d).f.a.a<415
 s=t.p
 r=t.eH
 q=t.V
 p=t.wy
-return d?A.b3(o,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(n,2,o,A.ay(m,$.aP(),o),B.am,o,4),new A.aoa(),A.cb(o,o,new A.aq(B.r,q),o,o,o,o,o,o,o,o,o,o,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),r),o,o,o,o,o)),A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,o,A.ay(m,$.aP(),o),B.a_,o,2),o,o),A.dB(A.d([A.bk(A.dL(l,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(k,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aob(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,o,A.ay(m,$.aP(),o),B.a_,o,2),o,o),A.dB(A.d([A.bk(A.dL(h,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(g,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aoc(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,o,A.ay(m,$.aP(),o),B.a_,o,2),o,o),A.dB(A.d([A.bk(A.dL(f,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(e,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7("Github",o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aod(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1)],s),B.D,B.F),o),B.E,o,1100,o,o,o,o):A.b3(o,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(n,2,o,A.ay(m,$.aP(),o),B.am,o,4),new A.aoe(),A.cb(o,o,new A.aq(B.r,q),o,o,o,o,o,o,o,o,o,o,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),r),o,o,o,o,o)),A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,o,A.ay(m,$.aP(),o),B.a_,o,2),o,o),A.dB(A.d([A.bk(A.dL(l,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(k,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aof(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,o,A.ay(m,$.aP(),o),B.a_,o,2),o,o),A.dB(A.d([A.bk(A.dL(h,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(g,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aog(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,o,A.ay(m,$.aP(),o),B.a_,o,2),o,o),A.dB(A.d([A.bk(A.dL(f,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(e,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7("Github",o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aoh(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1)],s),B.D,B.F),o),B.E,o,1500,o,o,o,o)},
+return d?A.b3(o,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(n,2,o,A.ay(m,$.aP(),o),B.am,o,4),new A.aoa(),A.cb(o,o,new A.aq(B.r,q),o,o,o,o,o,o,o,o,o,o,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),r),o,o,o,o,o)),A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,o,A.ay(m,$.aP(),o),B.Z,o,2),o,o),A.dB(A.d([A.bk(A.dL(l,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(k,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aob(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,o,A.ay(m,$.aP(),o),B.Z,o,2),o,o),A.dB(A.d([A.bk(A.dL(h,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(g,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aoc(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,o,A.ay(m,$.aP(),o),B.Z,o,2),o,o),A.dB(A.d([A.bk(A.dL(f,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(e,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7("Github",o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aod(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1)],s),B.D,B.F),o),B.E,o,1100,o,o,o,o):A.b3(o,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7(n,2,o,A.ay(m,$.aP(),o),B.am,o,4),new A.aoe(),A.cb(o,o,new A.aq(B.r,q),o,o,o,o,o,o,o,o,o,o,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),r),o,o,o,o,o)),A.bk(A.aJ(A.d([A.bc(A.a7("VFXfood",2,o,A.ay(m,$.aP(),o),B.Z,o,2),o,o),A.dB(A.d([A.bk(A.dL(l,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(k,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aof(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Vanilai",2,o,A.ay(m,$.aP(),o),B.Z,o,2),o,o),A.dB(A.d([A.bk(A.dL(h,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(g,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7(i,o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aog(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1),A.bk(A.aJ(A.d([A.bc(A.a7("Ballot",2,o,A.ay(m,$.aP(),o),B.Z,o,2),o,o),A.dB(A.d([A.bk(A.dL(f,o,o,o),5),new A.ei(8,B.b2,A.aJ(A.d([A.a7(e,o,o,A.ay(j,B.r,o),o,o,o),new A.aC(B.ar,A.cA(A.a7("Github",o,o,A.bt(o,o,B.r,o,o,o,o,o,o,o,o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),new A.aoh(),A.cb(o,o,new A.aq($.aP(),p),o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)),o)],s),B.ax,B.F),o)],s),B.D,B.b7,B.a7)],s),B.D,B.F),1)],s),B.D,B.F),o),B.E,o,1500,o,o,o,o)},
 rA(a,b){var s="Staatliches",r=null,q=$.aP(),p=t.wy,o=t.p
-return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7("Work Samples",2,r,A.ay(s,q,r),B.am,r,4),new A.aoj(),A.cb(r,r,new A.aq(B.r,t.V),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),t.eH),r,r,r,r,r)),A.aJ(A.d([A.aJ(A.d([A.bc(A.a7("Github Profile",2,r,A.ay(s,B.r,r),B.a_,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Github",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.aok(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F),A.aJ(A.d([A.bc(A.a7("Developer account link",2,r,A.ay(s,B.r,r),B.a_,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Developer account",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.aol(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F)],o),B.D,B.F)],o),B.D,B.F),r),q,r,r,r,r,r,r)},
+return A.b3(r,new A.aC(B.N,A.aJ(A.d([A.cA(A.a7("Work Samples",2,r,A.ay(s,q,r),B.am,r,4),new A.aoj(),A.cb(r,r,new A.aq(B.r,t.V),r,r,r,r,r,r,r,r,r,r,new A.aq(new A.bT(A.fZ(30),new A.bC(B.r,1,B.a3)),t.eH),r,r,r,r,r)),A.aJ(A.d([A.aJ(A.d([A.bc(A.a7("Github Profile",2,r,A.ay(s,B.r,r),B.Z,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Github",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.aok(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F),A.aJ(A.d([A.bc(A.a7("Developer account link",2,r,A.ay(s,B.r,r),B.Z,r,2),r,r),new A.aC(B.ar,A.cA(A.a7("Developer account",r,r,A.bt(r,r,$.aP(),r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),new A.aol(),A.cb(r,r,new A.aq(B.r,p),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r)),r)],o),B.D,B.F)],o),B.D,B.F)],o),B.D,B.F),r),q,r,r,r,r,r,r)},
 ru(a,b){var s,r,q=null,p=A.a7("Get in touch",2,q,A.ay("Staatliches",B.r,q),B.am,q,4),o=A.fZ(30),n=$.aP()
 n.toString
 o=A.cA(p,new A.ao8(),A.cb(q,q,new A.aq(n,t.V),q,q,q,q,q,q,q,q,q,q,new A.aq(new A.bT(o,new A.bC(n,1,B.a3)),t.eH),q,q,q,q,q))
@@ -35570,7 +35570,7 @@ s=A.Oc(new A.aC(B.N,A.b3(q,A.aJ(A.d([A.ij(B.ld,B.r,50),A.a7("Phone",q,q,A.bt(q,q
 r=$.aP()
 return A.b3(q,new A.aC(B.N,A.aJ(A.d([o,A.aJ(A.d([new A.aC(B.N,n,q),new A.aC(B.N,s,q),new A.aC(B.N,A.fs(A.hc(q,A.Oc(new A.aC(B.N,A.b3(q,A.aJ(A.d([A.ij(B.lb,B.r,50),A.a7("Email",q,q,A.bt(q,q,B.r,q,q,q,q,q,q,q,q,q,q,B.ab,q,q,!0,q,q,q,q,q,q,q,q),q,q,2),A.a7("arun042000@gmail.com",q,q,A.bt(q,q,B.r,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,1)],p),B.D,B.F),q,q,q,q,q,q,1/0),q),r),B.ak,!1,q,q,q,q,q,q,q,q,q,q,new A.ao9(),q,q,q,q,q),B.ba,q,q,q),q)],p),B.D,B.qs)],p),B.D,B.e1),q),B.E,q,q,q,q,q,q)},
 bH(a,b,c){var s=null
-return A.awE(A.cd(0,300),A.dL(b,B.dc,a,a),A.b3(s,A.bc(A.a7(c,s,s,A.ay("Work Sans",$.aP(),10),s,s,s),s,s),s,s,a,s,s,s,a))},
+return A.awE(A.cd(0,300),A.dL(b,B.dc,a,a),A.b3(s,A.bc(A.a7(c,s,s,A.ay("Work Sans",$.aP(),10),B.Z,s,s),s,s),s,s,a,s,s,s,a))},
 lu(a,b,c,d){var s=null
 return new A.aC(B.eW,A.axg(A.a7(a,s,s,A.ay("Work Sans",s,s),s,s,s),new A.ao7(this,b,d),A.at3(s,s,s,s,s,s,s,s,s,s,s,B.r,s,B.rT,new A.bC(B.r,2,B.a3),s,s,s,s)),s)}}
 A.aoi.prototype={
@@ -47598,7 +47598,7 @@ var $async$ij=A.a3(function(c,d){if(c===1)return A.a_(d,r)
 while(true)switch(s){case 0:s=3
 return A.Z(p.cu(0,a),$async$ij)
 case 3:o=d
-if(o.byteLength<51200){q=B.Z.cL(0,A.cf(o.buffer,0,null))
+if(o.byteLength<51200){q=B.a_.cL(0,A.cf(o.buffer,0,null))
 s=1
 break}q=A.a75(A.aLT(),o,'UTF8 decode for "'+a+'"',t.yp,t.N)
 s=1
@@ -47636,7 +47636,7 @@ A.afw.prototype={
 cu(a,b){return this.ZB(0,b)},
 ZB(a,b){var s=0,r=A.a2(t.yp),q,p,o
 var $async$cu=A.a3(function(c,d){if(c===1)return A.a_(d,r)
-while(true)switch(s){case 0:p=B.bX.cw(A.aKg(A.Np(B.fg,b,B.Z,!1)).e)
+while(true)switch(s){case 0:p=B.bX.cw(A.aKg(A.Np(B.fg,b,B.a_,!1)).e)
 s=3
 return A.Z(A.e($.hG.b1$,"_defaultBinaryMessenger").qK(0,"flutter/assets",A.en(p.buffer,0,null)),$async$cu)
 case 3:o=d
@@ -56350,7 +56350,7 @@ A.a_a.prototype={}
 A.Mc.prototype={}
 A.Yd.prototype={
 PQ(a){var s=B.i.pK(a,"@")
-return A.Np(B.lu,B.i.Y(a,0,s),B.Z,!1)+B.i.di(a,s)},
+return A.Np(B.lu,B.i.Y(a,0,s),B.a_,!1)+B.i.di(a,s)},
 h(a){var s,r,q,p,o=new A.ci("mailto:"),n=this.a
 o.a=A.ajM("mailto:",new A.aH(n,this.gPP(),A.ad(n).j("aH<1,@>")),"%2C")
 s=A.b(["subject",null,"body",null,"cc",null,"bcc",null],t.N,t.dR)
@@ -56366,7 +56366,7 @@ p+="="
 o.a=p
 q=q.gq(q)
 q.toString
-o.a=p+A.Np(B.lu,q,B.Z,!1)
+o.a=p+A.Np(B.lu,q,B.a_,!1)
 r=!0}n=o.a
 return n.charCodeAt(0)==0?n:n}}
 A.afy.prototype={}
@@ -59987,7 +59987,7 @@ B.vb=new A.ako()
 B.vc=new A.akp()
 B.vd=new A.a0o()
 B.ve=new A.akK()
-B.Z=new A.a0C()
+B.a_=new A.a0C()
 B.bX=new A.akQ()
 B.X=new A.D(0,0,0,0)
 B.el=new A.a0J(0,0,0,0)
@@ -60471,11 +60471,11 @@ B.Ao=A.d(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
 B.lE=A.d(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
 B.am=new A.hK(0,"left")
 B.tr=new A.hK(1,"right")
-B.a_=new A.hK(2,"center")
+B.Z=new A.hK(2,"center")
 B.k7=new A.hK(3,"justify")
 B.cl=new A.hK(4,"start")
 B.ts=new A.hK(5,"end")
-B.Aq=A.d(s([B.am,B.tr,B.a_,B.k7,B.cl,B.ts]),A.S("t<hK>"))
+B.Aq=A.d(s([B.am,B.tr,B.Z,B.k7,B.cl,B.ts]),A.S("t<hK>"))
 B.Ar=A.d(s([!0,!1]),t.sj)
 B.lF=A.d(s(["bind","if","ref","repeat","syntax"]),t.s)
 B.AB=A.d(s([0,4,12,1,5,13,3,7,15]),t.t)
